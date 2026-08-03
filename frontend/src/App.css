@@ -1,0 +1,221 @@
+body {
+  margin: 0;
+  background: #f4f6f9;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+  max-width: 700px;
+  margin: 40px auto;
+  background: white;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.15);
+}
+
+h1 {
+  text-align: center;
+  color: #2563eb;
+}
+
+.input-section {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.input-section input {
+  flex: 1;
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+.input-section button {
+  padding: 10px 20px;
+  background: #2563eb;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.input-section button:hover {
+  background: #1d4ed8;
+}
+
+.task {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background: #f9fafb;
+  padding: 12px;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+.task {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background: #f9fafb;
+  padding: 12px;
+  border-radius: 8px;
+  margin-bottom: 10px;
+  animation: slideIn 0.3s ease;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.task:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 5px 15px rgba(0,0,0,0.12);
+}
+.task span {
+  flex: 1;
+  font-size: 17px;
+}
+
+.task input[type="text"] {
+  flex: 1;
+  padding: 8px;
+}
+
+button {
+  cursor: pointer;
+}
+
+.edit {
+  background: orange;
+  color: white;
+  border: none;
+  padding: 7px 12px;
+  border-radius: 5px;
+}
+
+.delete {
+  background: crimson;
+  color: white;
+  border: none;
+  padding: 7px 12px;
+  border-radius: 5px;
+}
+
+.save {
+  background: green;
+  color: white;
+  border: none;
+  padding: 7px 12px;
+  border-radius: 5px;
+}
+
+.cancel {
+  background: gray;
+  color: white;
+  border: none;
+  padding: 7px 12px;
+  border-radius: 5px;
+}
+.statistics {
+  display: flex;
+  justify-content: space-between;
+  gap: 15px;
+  margin: 20px 0;
+}
+
+.stat-card {
+  flex: 1;
+  background: #2563eb;
+  color: white;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.stat-card h3 {
+  margin: 0;
+  font-size: 18px;
+}
+
+.stat-card p {
+  margin-top: 10px;
+  font-size: 28px;
+  font-weight: bold;
+}
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateY(15px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+button {
+  cursor: pointer;
+  transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+button:hover {
+  transform: scale(1.05);
+  opacity: 0.9;
+}
+@media (max-width: 600px) {
+
+  .container {
+    width: 90%;
+    margin: 20px auto;
+    padding: 15px;
+  }
+
+  h1 {
+    font-size: 24px;
+  }
+
+  .input-section {
+    flex-direction: column;
+  }
+
+  .input-section input {
+    width: 100%;
+  }
+
+  .input-section button {
+    width: 100%;
+  }
+
+  .task {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  background: #f8fafc;
+  margin: 12px 0;
+  padding: 15px;
+  border-radius: 10px;
+  transition: all 0.3s ease;
+  animation: fadeIn 0.4s ease;
+} 
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(15px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+button {
+  transition: 0.3s ease;
+}
+
+button:hover {
+  transform: scale(1.05);
+}
+
+button:active {
+  transform: scale(0.95);
+}
